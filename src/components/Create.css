@@ -1,0 +1,95 @@
+/* Global Styles */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 10px; /* Added padding for better mobile view */
+}
+
+/* Container Styling */
+#container {
+  background-color: #1e1e1e;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Heading Styling */
+#title {
+  margin-bottom: 20px;
+  color: #e0e0e0;
+  font-size: 24px; /* Adjust font size for better readability */
+  font-weight: bold;
+}
+
+/* Input Fields Styling */
+#email,
+#pass {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+#email:focus,
+#pass:focus {
+  outline: none;
+  border-color: #6200ea; /* Purple border color on focus */
+}
+
+/* Button Styling */
+#submit {
+  width: 100%;
+  padding: 15px;
+  background-color: #6200ea;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+  background-color: #3700b3; /* Darker purple on hover */
+}
+
+/* Placeholder Text Styling */
+input::placeholder {
+  color: #9e9e9e;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  #container {
+    padding: 20px;
+  }
+
+  #title {
+    font-size: 22px;
+  }
+
+  #email,
+  #pass {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  #submit {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
